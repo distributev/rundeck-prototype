@@ -1,4 +1,4 @@
-# rundeck-prototype
+# Scope of Project
 Evaluate Rundeck as an effective user interface on top of existing Java command line / server programs
 
 Rundeck - https://github.com/rundeck/rundeck describes itself as
@@ -6,6 +6,17 @@ Rundeck - https://github.com/rundeck/rundeck describes itself as
 Rundeck is an open source automation service with a web console, command line tools and a WebAPI. It lets you easily run automation tasks across a set of nodes.
 
 The scope of this project is to prototype Rundeck as being effectively used as a user interface / API interface on top of an existing Java commandline and server program. The existing Java program is https://github.com/distributev/mailmerger
+
+# Project Deliverables
+
+* Required project source code pushed to this github repository
+* Document with detailed and clear steps how to achieve everything described in the below section called How Testing Will Be Done
+* rundeck-customization-guide document with separate paragraphs which explain the steps required (with screenshots)
+** How to change the logo in rundeck user interface?
+** How to customize the rundeck color scheme?
+** How to add new menu items in the rundeck menu bar? How to hide / remove menu items from the rundeck menu bar?
+** How to add new UI components in the rundeck user interface? How to hide / remove UI components from the rundeck user interface?
+
 
 The existing mailmerger Java program is composed of 2 parts
 
