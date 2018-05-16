@@ -34,7 +34,7 @@ Using rundeck build a simple user interface which will allow users:
 
 The processing along with the logging (errors / info) are already handled by the existing mailmerger cmdline / server https://github.com/distributev/mailmerger the current prototype should only put a "rundeck powered" user inteface on top of existing processing.
 
-## User Interface
+## User Interface Requirement
 
 The prototyped user interface / screens should contain the following information while the actual look and feel should come from rundeck (use rundeck to provide capabilities displayed here)
 
