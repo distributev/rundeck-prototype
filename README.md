@@ -9,13 +9,13 @@ The scope of this project is to prototype Rundeck as being effectively used as a
 
 # Project Deliverables
 
-* Required project source code pushed to this github repository
-* Document with detailed and clear steps how to achieve everything described in the below section called How Testing Will Be Done
-* rundeck-customization-guide document with separate paragraphs which explain the steps required (with screenshots)
-** How to change the logo in rundeck user interface?
-** How to customize the rundeck color scheme?
-** How to add new menu items in the rundeck menu bar? How to hide / remove menu items from the rundeck menu bar?
-** How to add new UI components in the rundeck user interface? How to hide / remove UI components from the rundeck user interface?
+1. Required project source code pushed to this github repository
+2. Document with detailed and clear steps how to achieve everything described in the below section called How Testing Will Be Done
+3. rundeck-customizations-guide.md document with separate paragraphs which explain the steps required (with screenshots)
+  * How to change the logo in rundeck user interface?
+  * How to customize the rundeck color scheme?
+  * How to add new menu items in the rundeck menu bar? How to hide / remove menu items from the rundeck menu bar?
+  * How to add new UI components in the rundeck user interface? How to hide / remove UI components from the rundeck user interface?
 
 
 The existing mailmerger Java program is composed of 2 parts
@@ -34,7 +34,7 @@ Using rundeck build a simple user interface which will allow users:
 
 The processing along with the logging (errors / info) are already handled by the existing mailmerger cmdline / server https://github.com/distributev/mailmerger the current prototype should only put a "rundeck powered" user inteface on top of existing processing.
 
-## User Interface Requirement
+## User Interface Guidelines
 
 The prototyped user interface / screens should contain the following information while the actual look and feel should come from rundeck (use rundeck to provide capabilities displayed here)
 
