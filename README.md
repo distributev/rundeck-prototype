@@ -30,7 +30,7 @@ Both mailmerger command line and mailmerger server take as input CSV files and g
 
 # What needs to be done
 
-Using rundeck build a simple user interface which will allow users:
+Using rundeck build a simple https://github.com/distributev/mailmerger user interface which will allow users:
 
 1. to browse and select local CSV files to be uploaded to the "poll" folder which is watched by the existing mailmerger-server
 2. once new CSV files are uploaded automatically pick and "wrap" the existing processing using the http://rundeck.org/docs/api/ ==> the existing mailmerger processing will be "wrapped" as rundeck jobs
