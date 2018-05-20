@@ -45,7 +45,7 @@ The processing along with the logging (errors / info) are already handled by the
 
 ## User Interface Guidelines
 
-The prototyped user interface / screens should contain the following information while the actual look and feel should come from rundeck (use rundeck to provide capabilities displayed here)
+The prototyped user interface / screens should contain the following capabilities / information while the actual look and feel should come from rundeck (use rundeck to provide capabilities displayed here)
 
 ![image](https://user-images.githubusercontent.com/19224635/40109868-bdd5e3ec-58fe-11e8-9989-44bbfad2d7c3.png)
 
