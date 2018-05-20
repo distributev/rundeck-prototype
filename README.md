@@ -49,6 +49,18 @@ The prototyped user interface / screens should contain the following information
 
 ![image](https://user-images.githubusercontent.com/19224635/40109868-bdd5e3ec-58fe-11e8-9989-44bbfad2d7c3.png)
 
+## Steps to Implement the Above Requirements
+
+<strong>Step 1</strong> - Fork existing https://github.com/distributev/mailmerger project
+
+<strong>Step 2</strong> - Create the new mailmerger-jobs-webconsole and mailmerger-assembly folders;  mailmerger-jobs-webconsole will contain rundeck customizations specific to this project; mailmerger-assembly build.gradle script will take as input mailmerger + rundeck core + mailmerger-jobs-webconsole rundeck customizations and will generate the mailmerger.zip described above; mailmerger-assembly build.gradle will have defined a constant with the link to download rundeck (i.e.http://dl.bintray.com/rundeck/rundeck-maven/rundeck-launcher-2.11.3.jar) 
+* if the specified rundeck download is already available locally then the local version will be used to generate mailmerger.zip
+* otherwise rundeck will be downloaded locally and then the mailmerger.zip will be generated
+
+<strong>Step 3</strong> - Inside mailmerger-jobs-webconsole implement the screens described in the above User Interface Guidelines section; mailmerger-jobs-webconsole should be a normal gradle sub-project
+
+<strong>Step 4</strong> - Inside mailmerger-assembly/build.gradle implement the script to generate the needed mailmerger.zip file
+
 
 
 
