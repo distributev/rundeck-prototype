@@ -61,7 +61,7 @@ The prototyped user interface / screens should contain the following capabilitie
 
 <strong>Step 4</strong> - Inside mailmerger-assembly/build.gradle implement the script to generate the needed mailmerger.zip file
 
-![image](https://user-images.githubusercontent.com/19224635/40277969-a9cf52de-5c28-11e8-8a61-2a14882cd29e.png)
+![image](https://user-images.githubusercontent.com/19224635/40277989-265bc878-5c29-11e8-863c-7c0d0ad96678.png)
 
 
 
