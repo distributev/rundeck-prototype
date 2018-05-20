@@ -19,6 +19,10 @@ The scope of this project is to prototype Rundeck as being effectively used as a
   * How to add new menu items in the rundeck menu bar? How to hide / remove menu items from the rundeck menu bar?
   * How to add new UI components in the rundeck user interface? How to hide / remove UI components from the rundeck user interface?
 
+# mailmerger.zip
+
+![image](https://user-images.githubusercontent.com/19224635/40276491-d26562f0-5c0b-11e8-8dfd-365289e72aba.png)
+
 # What already exists 
 
 The existing https://github.com/distributev/mailmerger Java program is composed of 2 parts
