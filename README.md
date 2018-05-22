@@ -55,8 +55,13 @@ The prototyped user interface / screens should contain the following capabilitie
 
 <strong>Step 2</strong> - Unzip mailmerger.zip to an empty folder and start the mailmerger jobs console server using the script <a href="#mailmergerzip">startMailMerger.bat</a> - the jobs console should become accessible through a web browser
 
-<strong>Step 3</strong> - Using the web interface upload a CSV file which should be picked and processed without errors. The new job should become available in the job list and the status should become COMPLETET after few seconds. Clicking the job details should open a new screen with all the details of the job and it should be possible to view and download each of the ouput PDF files.
+<strong>Step 3</strong> - Using the web interface upload a CSV file which should be picked and processed without errors. The new job should become available in the job list and the status should become COMPLETET after few seconds. Clicking the job details should open a new screen with all the details of the job and it should be possible to view and download each of the ouput PDF files. 
 
+<strong>Step 4</strong> - Using the web interface upload a CSV file which should be picked and generate errors. The new job should become available in the job list and the status should become FAILED (RED COLOR) after few seconds. Clicking the job details should open a new screen with all the details of the job and the error log should be visible in the user interface
+
+<strong>Step 5</strong> - The <a href="#userinterface">User Interace</a> should contain all required information
+
+<strong>Step 6</strong> - [rundeck-customizations-guide.md](rundeck-customizations-guide.md) informations should be accurate and should be easy to try
 
 ## Steps to Implement the Above Requirements
 
