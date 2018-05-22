@@ -10,7 +10,7 @@ Rundeck is an open source automation service with a web console, command line to
 
 1. Required project source code pushed to this github repository
 2. https://github.com/distributev/rundeck-prototype/blob/master/mailmerger-assembly/build.gradle script which will generate <a href="#mailmergerzip">mailmerger.zip</a> file described below
-3. Document with detailed and clear steps how to achieve everything described in the below section called <a href="#testing">How Testing Will Be Done</a>
+3. Make sure everything works as per <a href="#testing">How Testing Will Be Done</a>
 4. [rundeck-customizations-guide.md](rundeck-customizations-guide.md) document with separate paragraphs which explain the steps required (with screenshots)
  * How to change the logo in rundeck user interface?
  * How to customize existing rundeck jobs-list and job-details screens? (add / hide job fields in the UI) 
