@@ -60,7 +60,7 @@ The prototyped user interface / screens should contain the following capabilitie
 
 <strong>Step 5</strong> - The <a href="#userinterface">User Interface</a> should contain all required information
 
-<strong>Step 6</strong> - [rundeck-customizations-guide.md](rundeck-customizations-guide.md) information should be accurate and should be easy to try
+<strong>Step 6</strong> - [rundeck-customizations-guide.md](rundeck-customizations-guide.md) information should be accurate and should be easy to follow
 
 ## Steps to Implement the Above Requirements
 
