@@ -1,11 +1,10 @@
 # Scope of Project
-Evaluate Rundeck as an effective user interface on top of an existing Java command line / server program
+
+The scope of this project is to prototype Rundeck as being effectively used as a user interface / API interface on top of an existing Java commandline and server program. The existing Java program is https://github.com/distributev/mailmerger
 
 Rundeck - https://github.com/rundeck/rundeck describes itself as
 
 Rundeck is an open source automation service with a web console, command line tools and a WebAPI. It lets you easily run automation tasks across a set of nodes.
-
-The scope of this project is to prototype Rundeck as being effectively used as a user interface / API interface on top of an existing Java commandline and server program. The existing Java program is https://github.com/distributev/mailmerger
 
 # Project Deliverables
 
