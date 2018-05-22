@@ -1,5 +1,5 @@
 # Scope of Project
-Evaluate Rundeck as an effective user interface on top of existing Java command line / server programs
+Evaluate Rundeck as an effective user interface on top of an existing Java command line / server program
 
 Rundeck - https://github.com/rundeck/rundeck describes itself as
 
