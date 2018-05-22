@@ -37,7 +37,7 @@ Using rundeck build a simple https://github.com/distributev/mailmerger user inte
 
 1. to browse and select local CSV files to be uploaded to the "poll" folder which is watched by the existing mailmerger-server
 2. once new CSV files are uploaded automatically pick and "wrap" the existing processing using the http://rundeck.org/docs/api/ ==> the existing mailmerger processing will be "wrapped" as rundeck jobs
-3. once the jobs are processed using rundeck apis allows users to see the output of the jobs inside the user interface. For instance the users should be able to see a simple list with the CSV jobs they triggered along with the status which could be "green success" or "red errors"
+3. once the jobs are processed using rundeck apis permit users to see the output of the jobs inside the user interface. For instance the users should be able to see a simple list with the CSV jobs they triggered along with the status which could be "green success" or "red errors"
 4. Once clicking on each individual job in the list of previously executed jobs ==> a job details page should open which will display, in the case of successful job, a list with the individual PDFs generated (along with a link to view / download each PDF) and in the case of error the job details should display the errors.log specific to the current job execution (users should be able to see for what reason the specific job failed).
 
 The processing along with the logging (errors / info) are already handled by the existing mailmerger cmdline / server https://github.com/distributev/mailmerger the current prototype should only put a "rundeck powered" user interface on top of existing processing.
