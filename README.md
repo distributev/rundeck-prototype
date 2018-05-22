@@ -41,7 +41,7 @@ Using rundeck build a simple https://github.com/distributev/mailmerger user inte
 3. once the jobs are processed using rundeck apis allows users to see the output of the jobs inside the user interface. For instance the users should be able to see a simple list with the CSV jobs they triggered along with the status which could be "green success" or "red errors"
 4. Once clicking on each individual job in the list of previously executed jobs ==> a job details page should open which will display, in the case of successful job, a list with the individual PDFs generated (along with a link to view / download each PDF) and in the case of error the job details should display the errors.log specific to the current job execution (users should be able to see for what reason the specific job failed).
 
-The processing along with the logging (errors / info) are already handled by the existing mailmerger cmdline / server https://github.com/distributev/mailmerger the current prototype should only put a "rundeck powered" user inteface on top of existing processing.
+The processing along with the logging (errors / info) are already handled by the existing mailmerger cmdline / server https://github.com/distributev/mailmerger the current prototype should only put a "rundeck powered" user interface on top of existing processing.
 
 <a name="userinterface"><h2>User Interface Guidelines</h2></a>
 
@@ -55,13 +55,13 @@ The prototyped user interface / screens should contain the following capabilitie
 
 <strong>Step 2</strong> - Unzip mailmerger.zip to an empty folder and start the mailmerger jobs console server using the script <a href="#mailmergerzip">startMailMerger.bat</a> - the jobs console should become accessible through a web browser
 
-<strong>Step 3</strong> - Using the web interface upload a CSV file which should be picked and processed without errors. The new job should become available in the job list and the status should become COMPLETET after few seconds. Clicking the job details should open a new screen with all the details of the job and it should be possible to view and download each of the ouput PDF files. 
+<strong>Step 3</strong> - Using the web interface upload a CSV file which should be picked and processed without errors. The new job should become available in the job list and the status should become COMPLETED after few seconds. Clicking the job details should open a new screen with all the details of the job and it should be possible to view and download each of the output PDF files. 
 
 <strong>Step 4</strong> - Using the web interface upload a CSV file which should be picked and generate errors. The new job should become available in the job list and the status should become FAILED (RED COLOR) after few seconds. Clicking the job details should open a new screen with all the details of the job and the error log should be visible in the user interface
 
-<strong>Step 5</strong> - The <a href="#userinterface">User Interace</a> should contain all required information
+<strong>Step 5</strong> - The <a href="#userinterface">User Interface</a> should contain all required information
 
-<strong>Step 6</strong> - [rundeck-customizations-guide.md](rundeck-customizations-guide.md) informations should be accurate and should be easy to try
+<strong>Step 6</strong> - [rundeck-customizations-guide.md](rundeck-customizations-guide.md) information should be accurate and should be easy to try
 
 ## Steps to Implement the Above Requirements
 
