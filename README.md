@@ -19,7 +19,7 @@ The scope of this project is to prototype Rundeck as being effectively used as a
  * How to add new menu items in the rundeck menu bar? How to hide / remove menu items from the rundeck menu bar?
  * How to add new UI components in the rundeck user interface? How to hide / remove UI components from the rundeck user interface?
 
-# mailmerger.zip
+<a name="mailmergerzip"><h2>mailmerger.zip</h2></a>
 
 ![image](https://user-images.githubusercontent.com/19224635/40276491-d26562f0-5c0b-11e8-8dfd-365289e72aba.png)
 
@@ -43,11 +43,22 @@ Using rundeck build a simple https://github.com/distributev/mailmerger user inte
 
 The processing along with the logging (errors / info) are already handled by the existing mailmerger cmdline / server https://github.com/distributev/mailmerger the current prototype should only put a "rundeck powered" user inteface on top of existing processing.
 
-## User Interface Guidelines
+<a name="userinterface"><h2>User Interface Guidelines</h2></a>
 
 The prototyped user interface / screens should contain the following capabilities / information while the actual look and feel should come from rundeck (use rundeck to provide capabilities displayed here)
 
 ![image](https://user-images.githubusercontent.com/19224635/40109868-bdd5e3ec-58fe-11e8-9989-44bbfad2d7c3.png)
+
+<a name="testing"><h2>How Testing Will Be Done</h2></a>
+
+<strong>Step 1</strong> - Build mailmerger.zip using the script provided in mailmerger-assembly/build.gradle file
+
+<strong>Step 2</strong> - Unzip mailmerger.zip and start the mailmerger jobs console server using the script startMailMerger.bat - the jobs console should become accessible through a web browser
+
+<strong>Step 3</strong> - Unzip mailmerger.zip and start the mailmerger web console server using the script startMailMerger.bat - the web console should become accessible through a web browser
+
+<strong>Step 4</strong> - Using the web interface upload a CSV file which should be picked and processed without errors. The new job should become available in the job list and the status should become COMPLETET after few seconds. Clicking the job details should open a new screen with all the details of the job and it should be possible to view and download each of the ouput PDF files.
+
 
 ## Steps to Implement the Above Requirements
 
