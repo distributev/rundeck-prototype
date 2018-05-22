@@ -53,9 +53,9 @@ The prototyped user interface / screens should contain the following capabilitie
 
 <strong>Step 1</strong> - Build mailmerger.zip using the script provided in mailmerger-assembly/build.gradle file
 
-<strong>Step 2</strong> - Unzip mailmerger.zip and start the mailmerger jobs console server using the script startMailMerger.bat - the jobs console should become accessible through a web browser
+<strong>Step 2</strong> - Unzip mailmerger.zip and start the mailmerger jobs console server using the script <a href="#mailmergerzip">startMailMerger.bat</a> - the jobs console should become accessible through a web browser
 
-<strong>Step 3</strong> - Unzip mailmerger.zip and start the mailmerger web console server using the script startMailMerger.bat - the web console should become accessible through a web browser
+<strong>Step 3</strong> - Unzip mailmerger.zip and start the mailmerger web console server using the script <a href="#mailmergerzip">startMailMerger.bat</a> - the web console should become accessible through a web browser
 
 <strong>Step 4</strong> - Using the web interface upload a CSV file which should be picked and processed without errors. The new job should become available in the job list and the status should become COMPLETET after few seconds. Clicking the job details should open a new screen with all the details of the job and it should be possible to view and download each of the ouput PDF files.
 
