@@ -24,6 +24,11 @@ repositories {
     mavenCentral()
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.distributev.mailmerger.app.Application'
+    }
+}
 
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.2.RELEASE'
