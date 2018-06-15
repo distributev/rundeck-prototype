@@ -6,13 +6,14 @@ To verify it is installed correctly please use these commands:
 ```
 node -v 
 npm -v
+npm install
 ```
 
-### Installing angular CLI
-It is required to have installed angular CLI if you want run project onto embedded server.
-To install angular CLI please use command 
+### Installing dependecies
+It is required to have installed all dependencies, indluding angular CLI if you want run project onto embedded server.
+To install dependencies please use command 
 ```
-npm install -g @angular/cli
+npm install
 ```
 
 ### Start the server
