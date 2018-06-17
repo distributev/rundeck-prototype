@@ -21,7 +21,8 @@ export class JobDetailsComponent implements OnInit {
 
   loadJobDetails() {
       const id = +this.route.snapshot.paramMap.get('id');
-      this.selectedJob = this.jobService.getJobDetails(id);
+      this.jobService.getJobDetails(id)
+          .subscribe(job => this.selectedJob = job);
   }
 
   isSucess(): boolean {

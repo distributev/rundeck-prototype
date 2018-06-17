@@ -7,6 +7,8 @@ import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {JobListComponent} from './job-list/job-list.component';
 import {JobDetailsComponent} from './job-details/job-details.component';
+import {HttpClientModule} from '@angular/common/http';
+
 
 const appRoutes: Routes = [
     { path: '', component: JobListComponent, pathMatch: 'full' },
@@ -16,7 +18,7 @@ const appRoutes: Routes = [
 @NgModule({
     declarations: [AppComponent, JobListComponent, JobDetailsComponent],
     imports: [
-        RouterModule.forRoot(appRoutes), BrowserModule, CommonModule, MatTableModule, MatButtonModule
+        RouterModule.forRoot(appRoutes), BrowserModule, CommonModule, MatTableModule, MatButtonModule, HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]
