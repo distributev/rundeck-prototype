@@ -1,0 +1,4 @@
+rootProject.name = 'mailmerger-jobs-webconsole'
+
+include 'client'
+include 'server'
