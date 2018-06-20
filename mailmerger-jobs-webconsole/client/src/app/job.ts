@@ -1,9 +1,9 @@
 export class Job {
     id: number;
-    fileName: string;
-    date: string;
-    start: string;
+    inputFileName: string;
+    startDate: string;
+    startTime: string;
     duration: string;
     status: string;
-    code: string;
+    exitCode: string;
 }

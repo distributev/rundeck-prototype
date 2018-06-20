@@ -25,7 +25,7 @@ export class JobDetailsComponent implements OnInit {
           .subscribe(job => this.selectedJob = job);
   }
 
-  isSucess(): boolean {
+  isSuccess(): boolean {
     return this.selectedJob.status === 'COMPLETED';
   }
 

@@ -12,15 +12,15 @@
         <tbody>
         <tr>
           <th>Input File</th>
-          <td>{{ selectedJob.fileName }}</td>
+          <td>{{ selectedJob.inputFileName }}</td>
         </tr>
         <tr>
           <th>Start Date</th>
-          <td>{{ selectedJob.date }}</td>
+          <td>{{ selectedJob.startDate }}</td>
         </tr>
         <tr>
           <th>Start Time</th>
-          <td>{{ selectedJob.start }}</td>
+          <td>{{ selectedJob.startTime }}</td>
         </tr>
         <tr>
           <th>Duration</th>
@@ -30,11 +30,11 @@
           <th>Status</th>
           <td>{{ selectedJob.status }}</td>
         </tr>
-        <tr *ngIf="isSucess()">
+        <tr *ngIf="selectedJob.status === 'SUCCESS'">
           <th>Output Files</th>
           <td>{{ selectedJob.files  }}</td>
         </tr>
-        <tr *ngIf="!isSucess()">
+        <tr ng-if="selectedJob.status !== 'SUCCESS'">
           <th>Exit Message</th>
           <td>{{ selectedJob.exitMessage }}</td>
         </tr>

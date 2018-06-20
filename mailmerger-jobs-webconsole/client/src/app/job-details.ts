@@ -1,11 +1,11 @@
 export class JobDetails {
     id: number;
-    fileName: string;
-    date: string;
-    start: string;
+    inputFileName: string;
+    startDate: string;
+    startTime: string;
     duration: string;
     status: string;
     code: string;
-    files: [string];
+    output: [string];
     exitMessage: string;
 }

@@ -24,16 +24,32 @@ repositories {
     mavenCentral()
 }
 
-jar {
-    manifest {
-        attributes 'Main-Class': 'org.distributev.mailmerger.app.Application'
-    }
+dependencies {
+    compile project(':server')
+}
 
-    from('../client/dist') {
-        //Public is a default supported Spring Boot resources directory.
-        into 'public'
+bootJar {
+    baseName = 'mailmerger'
+    manifest {
+        attributes 'Start-Class': 'org.distributev.mailmerger.app.Application'
     }
 }
 
-//frontend:build will be run before the processResources
-processResources.dependsOn('client:build')
+sourceSets {
+    main {
+        java {
+            srcDir "${project(':server').projectDir}/src/main/java"
+        }
+    }
+}
+processResources.dependsOn(':client:build')
+
+processResources {
+    from ("${project(':client').projectDir}/dist/mailmerger") {
+        into '/public'
+    }
+
+    from ("${project(':server').projectDir}/src/main/resources") {
+        into '/'
+    }
+}
