@@ -1,43 +1,14 @@
-# How to start client server
-
-### Installing npm
-First of all you need npm to be installed. It is available at the following link: https://nodejs.org/en/download/
-To verify it is installed correctly please use these commands:
-```
-node -v 
-npm -v
-npm install
-```
-
-### Installing dependecies
-It is required to have installed all dependencies, indluding angular CLI if you want run project onto embedded server.
-To install dependencies please use command 
-```
-npm install
-```
-
-### Start the server
-To start the server you should move to client folder and serve the application
-``` 
-cd client
-# and 
-ng serve
-```
-
-
-# How to start backend server
-Please move to /server directory 
-```
-cd server
-```
-
 ### How to build executable jar file
-Using gradlew or gradlew.bat located in `server` directory execute task `build`
+Using gradlew or gradlew.bat located in `mailmerger-jobs-webconsole` directory execute task `build`
 Mac OS: ``./gradlew build``
 Windows: ``gradlew.bat build``
 
-### How to start built application
+### How to start application
 To start the server with the application please execute following command from the current directory:
 ```
-java -jar build/libs/server-0.0.1-SNAPSHOT.jar
+java -jar build/libs/mailmerger-0.0.1-SNAPSHOT.jar
 ```
+
+### How to open application
+Go to http://localhost:8080 and you'll be able to see started application
+
