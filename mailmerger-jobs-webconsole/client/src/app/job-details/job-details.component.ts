@@ -26,7 +26,7 @@ export class JobDetailsComponent implements OnInit {
   }
 
   isSuccess(): boolean {
-    return this.selectedJob.status === 'COMPLETED';
+    return this.selectedJob && this.selectedJob.status === 'COMPLETED';
   }
 
 }

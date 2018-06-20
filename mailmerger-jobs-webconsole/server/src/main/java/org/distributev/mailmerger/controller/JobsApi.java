@@ -17,7 +17,7 @@ import java.util.List;
 
 @CrossOrigin(origins = {"http://localhost:4200"}, maxAge = 4800)
 @RestController
-@RequestMapping("/job")
+@RequestMapping("/api/job")
 public class JobsApi {
 
     @Autowired

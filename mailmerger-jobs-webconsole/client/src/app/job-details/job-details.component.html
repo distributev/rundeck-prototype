@@ -2,7 +2,7 @@
   <div class="col-md-12"><h3>Job details</h3></div>
 </div>
 <div class="row margin">
-  <div class="col-md-12"><span>Details for {{selectedJob.status}} <strong>Execution</strong></span></div>
+  <div class="col-md-12"><span>Details for {{selectedJob?.status}} <strong>Execution</strong></span></div>
 </div>
 
 <div class="row margin ">
@@ -12,29 +12,29 @@
         <tbody>
         <tr>
           <th>Input File</th>
-          <td>{{ selectedJob.inputFileName }}</td>
+          <td>{{ selectedJob?.inputFileName }}</td>
         </tr>
         <tr>
           <th>Start Date</th>
-          <td>{{ selectedJob.startDate }}</td>
+          <td>{{ selectedJob?.startDate }}</td>
         </tr>
         <tr>
           <th>Start Time</th>
-          <td>{{ selectedJob.startTime }}</td>
+          <td>{{ selectedJob?.startTime }}</td>
         </tr>
         <tr>
           <th>Duration</th>
-          <td>{{ selectedJob.duration }}</td>
+          <td>{{ selectedJob?.duration }}</td>
         </tr>
         <tr>
           <th>Status</th>
-          <td>{{ selectedJob.status }}</td>
+          <td>{{ selectedJob?.status }}</td>
         </tr>
-        <tr *ngIf="selectedJob.status === 'SUCCESS'">
+        <tr *ngIf="selectedJob && isSuccess()">
           <th>Output Files</th>
-          <td>{{ selectedJob.files  }}</td>
+          <td>{{ selectedJob.output }}</td>
         </tr>
-        <tr ng-if="selectedJob.status !== 'SUCCESS'">
+        <tr *ngIf="selectedJob && !isSuccess()">
           <th>Exit Message</th>
           <td>{{ selectedJob.exitMessage }}</td>
         </tr>

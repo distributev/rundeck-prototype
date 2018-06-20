@@ -17,11 +17,11 @@ export class JobService {
     constructor(private http: HttpClient) { }
 
     getJobs(): Observable<Array<Job>> {
-        return this.http.get<Array<Job>>(this.host + '/job');
+        return this.http.get<Array<Job>>(this.host + '/api/job');
     }
 
     getJobDetails(id: number): Observable<JobDetails> {
-        return this.http.get<JobDetails>(this.host + '/job/' + id);
+        return this.http.get<JobDetails>(this.host + '/api/job/' + id);
     }
 
     private handleError (error: Response | any) {
