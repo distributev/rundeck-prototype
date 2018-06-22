@@ -42,6 +42,7 @@ sourceSets {
         }
     }
 }
+
 processResources.dependsOn(':client:build')
 
 processResources {
@@ -52,4 +53,17 @@ processResources {
     from ("${project(':server').projectDir}/src/main/resources") {
         into '/'
     }
+
+    from ("build/rundeck-2.11.4.war") {
+        into '/'
+    }
+}
+//
+//def f = new File('build/rundeck-2.11.4.war')
+//if (!f.exists()) {
+//    new URL('http://download.rundeck.org/war/rundeck-2.11.4.war').withInputStream{ i -> f.withOutputStream{ it << i }}
+//}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.8.1'
 }
