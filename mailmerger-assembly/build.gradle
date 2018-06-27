@@ -4,6 +4,7 @@ repositories {
 
 apply plugin: 'eclipse'
 apply plugin: 'idea'
+apply plugin: 'java'
 
 task getMailmergerWebconsole() {
     copy {
@@ -20,6 +21,11 @@ task getRundeck() {
     if (!f.exists()) {
         new URL('http://download.rundeck.org/war/rundeck-2.11.4.war').withInputStream{ i -> f.withOutputStream{ it << i }}
     }
+}
+
+dependencies {
+    compile('org.apache.tomcat.embed:tomcat-embed-jasper:8.0.47')
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
 }
 
 task wrapper(type: Wrapper) {
