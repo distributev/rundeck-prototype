@@ -10,11 +10,11 @@ buildscript {
     }
 }
 
-apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'war'
 
 group = 'org.distributev.mailmerger'
 version = '0.0.1-SNAPSHOT'
@@ -26,9 +26,11 @@ repositories {
 
 dependencies {
     compile project(':server')
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 
-bootJar {
+bootWar {
     baseName = 'mailmerger'
     manifest {
         attributes 'Start-Class': 'org.distributev.mailmerger.app.Application'
@@ -54,15 +56,10 @@ processResources {
         into '/'
     }
 
-    from ("build/rundeck-2.11.4.war") {
+    from ("rundeck-config.properties") {
         into '/'
     }
 }
-//
-//def f = new File('build/rundeck-2.11.4.war')
-//if (!f.exists()) {
-//    new URL('http://download.rundeck.org/war/rundeck-2.11.4.war').withInputStream{ i -> f.withOutputStream{ it << i }}
-//}
 
 task wrapper(type: Wrapper) {
     gradleVersion = '4.8.1'
