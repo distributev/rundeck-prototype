@@ -1,1 +1,27 @@
+repositories {
+    mavenCentral()
+}
 
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+task getMailmergerWebconsole() {
+    copy {
+        into "build"
+        from "${rootProject.projectDir.parentFile}/mailmerger-jobs-webconsole/build/libs/"
+        include "*.war"
+    }
+}
+
+task getRundeck() {
+    new File("build").mkdir()
+
+    def f = new File('build/rundeck-2.11.4.war')
+    if (!f.exists()) {
+        new URL('http://download.rundeck.org/war/rundeck-2.11.4.war').withInputStream{ i -> f.withOutputStream{ it << i }}
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.8.1'
+}
